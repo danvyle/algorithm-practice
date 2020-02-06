@@ -18,3 +18,28 @@
 // Input: ["H","a","n","n","a","h"]
 // Output: ["h","a","n","n","a","H"]
 
+arr = ['h', 'e', 'l', 'l', 'o']
+arr2 = ["H","a","n","n","a","h"]
+function reverseString(arr) {
+    for (var i = 0; i <= ((arr.length - 1) / 2); i++) {
+        let first = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 -i ] = first;
+      }
+      console.log(arr);
+    }
+
+
+function reverseArray(arr) {
+    var newArray = [];
+    for (var i = arr.length - 1; i >= 0; i--) {
+      newArray.push(arr[i]);
+    }
+    console.log(newArray);
+  }
+
+  reverseArray(arr);
+  reverseArray(arr2);
+  reverseString(arr);
+
+  
