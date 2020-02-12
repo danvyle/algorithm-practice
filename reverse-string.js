@@ -42,4 +42,8 @@ function reverseArray(arr) {
   reverseArray(arr2);
   reverseString(arr);
 
+
+// Time complexity :O(N) to swap N/2 element.
+
+// Space complexity : O(1), it's a constant space solution.
   
