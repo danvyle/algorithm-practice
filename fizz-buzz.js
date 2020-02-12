@@ -22,3 +22,8 @@ function fizzBuzz() {
     }
     
     fizzBuzz();
+
+
+    
+// Time Complexity: O(N)
+// Space Complexity: O(1)

@@ -18,7 +18,7 @@
 
 
 //-------Pseudocode --------
-// I want to traverse down the tree by checking for root.left and root.right
+// I want to traverse down the tree by checking for root.left and root.rightch 
 // I need to check for null and that there are values in the tree to BST to begin. 
 // I want to check the left node first. Then the right node next and continue to traverse down if the node.left && node.right are not null.
 // From there, I'll establish a count for every time I traverse to the next node. How will I determine this if the right node is longer. 
