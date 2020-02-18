@@ -19,7 +19,7 @@
 
 //---solution
 
-var reverseList = function(head) {
+function reverseLL(head) {
     let prev = null;
     while(head){
         let nextNode = head.next;
@@ -31,8 +31,12 @@ var reverseList = function(head) {
     return prev; 
  };
 
+ reverseLL(head);
+
 
 
 //---time and space complexity
 
+// Time complexity : O(n). Assume that n is the list's length, the time complexity is O(n).
 
+// Space complexity : O(1).
