@@ -19,7 +19,25 @@
 
 
 //---------------pseudocode
+// I would like to sort the numbers to compare an indexed value to the next indexed value
+// this would tell me if there are any duplicates right away
+// If there aren't any duplicates, we'll return false.
+
 
 //---------------solution
+var nums = [1,2,3,1]
+function containsDuplicate(nums) {
+    nums.sort();
+    for(let i = 0; i<nums.length-1; i++){
+        if(nums[i]==nums[i+1]){
+            return true
+        }
+    }
+    return false;
+};
 
+console.log(containsDuplicate(nums))
 //---------------time and space
+
+// time: O(N)
+// space: O(N)
