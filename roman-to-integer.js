@@ -42,19 +42,41 @@
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 //----------pseudocode
 
-
-
-
-
-
+// The simple part is equating roman numerals to a number.
+// The trickier part is having the exception of the numbers that make up precede a bigger number, e.g. 5, 10, 50. 
+// I imagine we can set conditionals to check for the preceding letters being a lower number than the next to indicate that
+// it's not a straightforward transcription.
 
 
 
 //----------solution
+var s = "MCM"
+function romanToInt(s) {
+    let romanMap = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+    }
+    let count = 0
+    let i = 0;
+    while(i < s.length) {
+      if(romanMap[s[i]] < romanMap[s[i + 1]]) {
+            count += romanMap[s[i + 1]] - romanMap[s[i]]
+            i+=2
+        } else {
+            count += romanMap[s[i]]
+            i++
+        } 
+    }
+    
+    return count
+};
 
-
-
-
+console.log(romanToInt(s))
 
 
 
