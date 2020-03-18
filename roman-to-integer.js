@@ -83,3 +83,5 @@ console.log(romanToInt(s))
 
 
 //----------space and time
+// space: O(N)
+// time: O(N)
