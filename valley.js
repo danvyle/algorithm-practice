@@ -29,6 +29,29 @@
 //--------------solution
 
 
+function countValleys(n, s) {
+    var seaLevel = 0;
+    var curLevel = 0;
+    var valley = 0;
+    s = s.split('');
+
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === "U") {
+            curLevel += 1;
+            if (curLevel === 0){
+                valley += 1
+            }
+        } else {
+            curLevel -= 1
+        }
+    }
+    return valley
+
+}
+
+console.log(countValleys(8,"UDDDUDUU"))
+console.log(countValleys(12,"DDUUDDUDUUUD"))
+
 
 
 
