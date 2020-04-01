@@ -38,3 +38,30 @@
 // 3
 // Explanation 1:
 // The only thundercloud to avoid is . Emma can win the game in  jumps:
+
+//--------problem
+
+function jumpingOnClouds(c) {
+    let counter = 0
+    let i = 0
+    while (i < c.length) {
+      if (c[i+2] === 0) {
+        i += 2; 
+      } else {
+        i += 1
+      }
+      if (i !== c.length) {
+        counter++;
+        }
+    }
+    return counter
+  }
+
+  console.log(jumpingOnClouds([0, 0, 1, 0, 0, 1, 0]))
+
+//expected output: 4
+
+//------runtime
+
+// O(N)
+// O(N)
