@@ -33,7 +33,17 @@
 
 // Array . If we delete  and , all of the elements in the resulting array, , will be equal. Deleting these  elements is minimal. Our only other options would be to delete  elements to get an array of either  or .
 
+// https://www.hackerrank.com/challenges/equality-in-a-array/problem?h_r=next-challenge&h_v=legacy
+// --------pseudo code
+
+I want to find if there are any numbers that match in the Array. Once I find that number, I can filter that number? or I can add every time that number doesn't exist? 
+Then I can take a count of the remaining numbers to show the minimum amount of values that must be deleted
 // ------- solution
+
+function equalizeArray(arr) {
+
+
+}
 
 
 // ------- runtime
