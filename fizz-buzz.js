@@ -1,29 +1,64 @@
-// Write a program that prints the numbers from 1 to 21. But for multiples of three, 
+// Write a program that prints the numbers from 1 to 21. But for multiples of three,
 // print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For
- // numbers which are multiples of both three and five, print "FizzBuzz".
+// numbers which are multiples of both three and five, print "FizzBuzz".
 
 // (number % 3) == 0, it will print "Fizz"
 // (number % 5) == 0, it will print "Buzz"
 // (number % 3 == 0) && (number %% 5 == 0), it will print "FizzBuzz"
 
-
 function fizzBuzz() {
-    for (i = 1; i <= 100; i++) {
-        if (i % 5 === 0 && i % 3 === 0) {
-        console.log("FizzBuzz");
-      } else if (i % 3 === 0) {
-        console.log("Fizz");
-      } else if (i % 5 === 0) {
-        console.log("Buzz");
-      } else {
-        console.log(i);
-      }
+  for(i = 1; i <= 21; i++) {
+    if(i % 5 === 0 && i % 3 === 0) {
+      console.log('FizzBuzz');
+    } else if(i % 3 === 0) {
+      console.log('Fizz'); 
+    } else if(i % 5 === 0) {
+      console.log('Buzz');
+    } else {
+      console.log(i);
     }
-    }
-    
-    fizzBuzz();
+  }
+}
+
+  fizzBuzz();
+
+
+
+
 
 
     
 // Time Complexity: O(N)
 // Space Complexity: O(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function fizzBuzz() {
+//   for(i = 1; i <= 21; i++) {
+//     if (i % 5 === 0 && i % 3 === 0) {
+//       console.log('FizzBuzz');
+//     } else if (i % 3 === 0) {
+//       console.log('Fizz');
+//     } else if (i % 5 === 0) {
+//       console.log('Buzz');
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// fizzBuzz();
