@@ -30,7 +30,6 @@
 
 
 function countValleys(n, s) {
-    var seaLevel = 0;
     var curLevel = 0;
     var valley = 0;
     s = s.split('');
