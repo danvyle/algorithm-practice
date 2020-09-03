@@ -21,7 +21,7 @@
 // I can sort the array and evaluate one index value to the next, if it is not equal, i can return the num.
 
 //-----solution
-const nums = [4,1,2,1,2]
+const nums = [4,1,2,1,2,3,4]
 function singleNumber() {
     nums.sort();
     for (var i = 0; i < nums.length; i += 2) {

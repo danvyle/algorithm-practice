@@ -77,6 +77,7 @@ function romanToInt(s) {
 };
 
 console.log(romanToInt(s))
+//expected output 1900
 
 
 
