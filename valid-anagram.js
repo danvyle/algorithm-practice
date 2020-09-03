@@ -30,7 +30,7 @@ function isAnagram(s, t) {
     }
 };
 
-console.log(isAnagram("annalee","nanalee"))
+console.log(isAnagram("danvy","vydan"))
 //-----time&space complexity
 // Time: O(nlogn)
 // Space: O(1)
