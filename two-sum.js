@@ -18,6 +18,8 @@
 
 
 // ----solution----
+let nums = [2, 7, 11, 15]
+let target = 9
 
 function twoSums(nums, target) {
     const hash = {};
@@ -26,13 +28,15 @@ function twoSums(nums, target) {
       const difference = target - nums[i];
   
       if (difference in hash) {
-        return [hash[difference], i];
+        console.log([hash[difference], i]);
       }
   
       hash[nums[i]] = i;
     }
-  
+    
   };
 
-  ----------runtime--------
+  twoSums(nums, target);
+
+  //----------runtime--------
 //   O(n) space and time
