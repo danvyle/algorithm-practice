@@ -22,15 +22,17 @@ let nums = [2, 7, 11, 15]
 let target = 9
 
 function twoSums(nums, target) {
-    const hash = {};
-  
+    const hash = {}
+
     for (let i = 0; i < nums.length; i++) {
-      const difference = target - nums[i];
-  
+      let difference = target - nums[i];
+
       if (difference in hash) {
-        console.log([hash[difference], i]);
+        console.log(hash[difference], i);
+
+
       }
-  
+
       hash[nums[i]] = i;
     }
     
