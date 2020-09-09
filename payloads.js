@@ -38,8 +38,8 @@ function findString(input) {
     
       //iterate through the rest of the array to find the index of header and footer
       for(let i = 0; i < newArray.length; i++) {
+        //header
         let upperCasedHeader = newArray[i].toUpperCase();
-         
         if (upperCasedHeader.includes("HEADER")) {
             if (upperCasedHeader.length != footerIndex) {
             //don't forget to lap off anything after header
@@ -48,7 +48,7 @@ function findString(input) {
            }
           headerIndex = i;
         }
-        
+        //footer
         let upperCasedFooter = newArray[i].toUpperCase();
         if (upperCasedFooter.includes("FOOTER")) {
           if (upperCasedFooter.length != footerIndex) {
@@ -61,11 +61,7 @@ function findString(input) {
       }
         // we can then slice the array to get the blob we need and join it to produce a string.
       const payload = (newArray.slice(headerIndex + 1, footerIndex)).join(" ");
-     
-      
-
       let finalResult = headerString + payload + footerString;
-
       console.log(finalResult);
     }
     
