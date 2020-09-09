@@ -33,6 +33,8 @@ function findString(input) {
     
       let headerIndex = 0;
       let footerIndex = 0;
+      let headerString = '';
+      let footerString = '';
     
       //iterate through the rest of the array to find the index of header and footer
       for(let i = 0; i < newArray.length; i++) {
@@ -42,24 +44,29 @@ function findString(input) {
             if (upperCasedHeader.length != footerIndex) {
             //don't forget to lap off anything after header
             let newString = upperCasedHeader.split("HEADER");
-            headerIndex = i;
+            headerString = newString[1] + " ";
            }
-          
+          headerIndex = i;
         }
         
         let upperCasedFooter = newArray[i].toUpperCase();
         if (upperCasedFooter.includes("FOOTER")) {
           if (upperCasedFooter.length != footerIndex) {
             //don't forget to lap off anything before footer
-            let newFootString = upperCasedFooter.split("FOOTER");
-            footerIndex = i;
+            let quickArray = upperCasedFooter.split("FOOTER");
+            footerString = " " + quickArray[0] ;
            }
+           footerIndex = i;
         }
       }
-    //   console.log(headerIndex, footerIndex);
         // we can then slice the array to get the blob we need and join it to produce a string.
       const payload = (newArray.slice(headerIndex + 1, footerIndex)).join(" ");
-      console.log(payload);
+     
+      
+
+      let finalResult = headerString + payload + footerString;
+
+      console.log(finalResult);
     }
     
     console.log(findString(input));
